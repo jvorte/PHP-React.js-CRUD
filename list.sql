@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Εξυπηρετητής: 127.0.0.1
--- Χρόνος δημιουργίας: 20 Φεβ 2025 στις 08:38:55
+-- Χρόνος δημιουργίας: 21 Φεβ 2025 στις 11:21:24
 -- Έκδοση διακομιστή: 10.4.32-MariaDB
 -- Έκδοση PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Βάση δεδομένων: `testing`
+-- Βάση δεδομένων: `list`
 --
 
 -- --------------------------------------------------------
@@ -33,6 +33,13 @@ CREATE TABLE `sample_users` (
   `email` text NOT NULL,
   `last_name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Άδειασμα δεδομένων του πίνακα `sample_users`
+--
+
+INSERT INTO `sample_users` (`id`, `first_name`, `email`, `last_name`) VALUES
+(9, 'Dimitrios', 'jvortelinas@gmail.com', 'Vortelinas');
 
 --
 -- Ευρετήρια για άχρηστους πίνακες
@@ -52,7 +59,7 @@ ALTER TABLE `sample_users`
 -- AUTO_INCREMENT για πίνακα `sample_users`
 --
 ALTER TABLE `sample_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
