@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'testing');
+define('DB_PASSWORD', value: '');
+define('DB_NAME', 'list');
 
 /* Attempt to connect to MySQL database */
 try {
