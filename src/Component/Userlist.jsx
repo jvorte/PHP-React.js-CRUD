@@ -30,8 +30,9 @@ function Userlist(){
 	};
 
 	return (
-		<div className="card">
-			<div id='header' className="card-header">
+		<div className="card border-opacity-10" style={{ backgroundColor: "transparent" }}>
+
+			<div id='header' className="card-header bg-light">
 				<div className="row">
 					<div className="col-md-6"><b>User Data</b></div>
 					<div className="col-md-6">
